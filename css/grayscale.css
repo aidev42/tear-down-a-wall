@@ -158,7 +158,7 @@ a:focus {
 .btn-circle {
   width: 70px;
   height: 70px;
-  margin-top: 15px;
+  margin-top: 5%;
   padding: 7px 16px;
   border: 2px solid white;
   border-radius: 100% !important;
@@ -184,8 +184,8 @@ a:focus {
 .btn-circle i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -197,8 +197,8 @@ a:focus {
     transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
   }
   100% {
     -webkit-transform: scale(1);
@@ -211,8 +211,8 @@ a:focus {
     transform: scale(1);
   }
   50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
+    -moz-transform: scale(1.6);
+    transform: scale(1.6);
   }
   100% {
     -moz-transform: scale(1);
@@ -225,9 +225,8 @@ a:focus {
 .participate-section {
   width: 100%;
   padding: 50px 0;
-  color: white;
-  background: url(../img/participateBW-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -254,6 +253,7 @@ a:focus {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  font-size: 15px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -337,11 +337,45 @@ h1{
   border-color: #55acee;
 }
 
-.intro .intro-body {
-  background: rgba(0,0,0,.55);
+.facebook{
+  color: #3B5998;
+  border-color: #3B5998;
 }
 
-.twitter:hover i, .facebook:hover i{
+.facebook:hover{
+  background-color: #3B5998;
+  border-color: #3B5998;
+}
+
+.google{
+  color: #d34836;
+  border-color: #d34836;
+}
+
+.google:hover{
+  background-color: #d34836;
+  border-color: #d34836;
+}
+
+
+.youtube{
+  color: #e52d27;
+  border-color: #e52d27;
+}
+
+.youtube:hover{
+  background-color: #b31217;
+  border-color: #b31217;
+}
+
+
+.intro .intro-body {
+  background: rgba(0,0,0,.7);
+  background-size: cover;
+
+}
+
+.twitter:hover i, .facebook:hover i, .youtube:hover i{
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
@@ -351,3 +385,33 @@ h1{
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
+
+[data-slides] {
+  background: url(../img/wall-bg.jpg) no-repeat bottom center scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.highlight{
+  color: #F8ECC2;
+  border-color: #F8ECC2;
+}
+
+.white{
+  color: white;
+}
+
+.btn-circle{
+  font-size: 40px;
+}
+
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;*/
