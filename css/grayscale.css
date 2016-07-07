@@ -135,7 +135,7 @@ a:focus {
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
-  background: rgba(0,0,0,.4);
+  background: rgba(0,0,0,.0);
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
@@ -181,7 +181,7 @@ a:focus {
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
 }
-.btn-circle:hover i.animated {
+.btn-circle i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
@@ -325,4 +325,29 @@ h1{
 
 .nobreak{
   margin-bottom: 0;
+}
+
+.twitter{
+  color: #55acee;
+  border-color: #55acee;
+}
+
+.twitter:hover{
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.intro .intro-body {
+  background: rgba(0,0,0,.55);
+}
+
+.twitter:hover i, .facebook:hover i{
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
 }
