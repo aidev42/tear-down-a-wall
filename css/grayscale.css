@@ -282,7 +282,7 @@ a:focus {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -362,7 +362,7 @@ h1{
 #twitter:hover{
   background-color: #55acee;
   border-color: #55acee;
-  color: black;
+  color: white;
 }
 
 #facebook{
@@ -374,7 +374,7 @@ h1{
 #facebook:hover{
   background-color: #3B5998;
   border-color: #3B5998;
-  color: black;
+  color: white;
 }
 
 #google-plus{
@@ -386,7 +386,7 @@ h1{
 #google-plus:hover{
   background-color: #d34836;
   border-color: #d34836;
-  color: black
+  color: white;
 }
 
 
@@ -404,20 +404,20 @@ h1{
   color: black;
   border-color: black;
   margin: 20px 0;
-  -webkit-animation-name: pulseless;
-  -moz-animation-name: pulseless;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
 }
 
 .black-button:hover{
   background-color: black;
   border-color: black;
   color: white;
+/*  -webkit-animation-name: pulseless;
+  -moz-animation-name: pulseless;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;*/
 }
 
 
@@ -445,10 +445,10 @@ h1{
   text-align:left;
 }
 
-li{
+ol li{
   text-align:left;
-  font-size: 16px;
-  margin: 5px 0;
+  font-size: 1.25em;
+  margin: 25px 0;
 }
 
 .top-margin{
