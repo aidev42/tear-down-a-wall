@@ -429,17 +429,6 @@ h1{
   -o-background-size: cover;
 }
 
-.twitter:hover i, .facebook:hover i, .google-plus:hover i{
-  -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-}
-
 [data-slides] {
   background: url(../img/wall-bg.jpg) no-repeat bottom center scroll;
   background-repeat: no-repeat;
@@ -490,3 +479,15 @@ li{
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;*/
+
+
+#twitter:hover i, #facebook:hover i, #google-plus:hover i{
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
