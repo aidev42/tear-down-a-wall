@@ -1,9 +1,9 @@
 <!--
 
 TO DO:
-
-- add FB colors
 - check shade bg on mobile
+- add meta data and test links
+- update youtube video links
 
 
 
@@ -17,10 +17,36 @@ TO DO:
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="THIS IS THE TEST DESCRIPTION">
+    <meta name="author" content="THIS IS THE AUTHOR NAME">
     <title>Tear Down a Wall</title>
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="The Name or Title Here">
+    <meta itemprop="description" content="This is the page description">
+    <meta itemprop="image" content="http://www.example.com/image.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+    <meta name="twitter:data1" content="$3">
+    <meta name="twitter:label1" content="Price">
+    <meta name="twitter:data2" content="Black">
+    <meta name="twitter:label2" content="Color">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" />
+    <meta property="og:site_name" content="Site Name, i.e. Moz" />
+    <meta property="og:price:amount" content="15.00" />
+    <meta property="og:price:currency" content="USD" />
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -69,10 +95,10 @@ TO DO:
                         <a class="page-scroll" href="#about">Mission</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contest">Contest</a>
+                        <a class="page-scroll" href="#participate">participate</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#stories">stories</a>
+                        <a class="page-scroll" href="#stories">contest</a>
                     </li>
                 </ul>
             </div>
@@ -88,16 +114,16 @@ TO DO:
         "img/wall-bg3.jpg"
     ]'>
         <div class="intro-body">
-            <div class="container">
+            <div id="intro-row" class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading highlight">Nov 9th 2016</h1>
-                        <p class="intro-text nobreak"><span class="highlight">#TearDownAWall</span></p>
-                        <p class="intro-text">No politics. No agendas. Just humans for a more open world.</p>
+                        <h1 class="brand-heading nobreak shadow">Nov 9th 2016</h1>
+                        <p class="intro-text medium-shadow">#TearDownAWall</p>
+                        <p class="intro-text less-shadow">No politics. No agendas. Just humans for a more open world.</p>
                     </div>
                     <div class="col-md-8 col-md-offset-2">
-                        <a href="#about" class="highlight btn btn-circle page-scroll">
-                            <i class="white fa fa-angle-double-down animated"></i>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
                 </div>
@@ -109,35 +135,43 @@ TO DO:
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>[EMBED VIDEO HERE]</h2>
+
+                <!-- Video -->
+               <iframe id="map" src="https://www.youtube.com/embed/ofrB6OCSsgk" frameborder="0" allowfullscreen></iframe>
+
+
+
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/intent/tweet?hashtags=TearDownAWall" class="twitter btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Tweet&nbsp Your&nbsp Story</span></a>
+                        <a href="https://twitter.com/intent/tweet?hashtags=TearDownAWall" id="twitter" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Tweet&nbsp Your&nbsp Story</span></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=teardownawall.com" class="facebook btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Share Our Mission</span></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=TearDownAWall.com" target="_blank" id="facebook" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Share Our Mission</span></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=teardownawall.com" class="youtube btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Spread&nbsp the&nbsp Word&nbsp</span></a>
+                        <a href="https://plus.google.com/u/0/share?url=https%3A//www.TearDownAWall.com" target="_blank" id="google-plus" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Spread&nbsp the&nbsp Word&nbsp</span></a>
                     </li>
 <!--                     <li>
                         <a href="https://www.facebook.com/sharer/sharer.php?u=teardownawall.com" class="google btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Show&nbsp</span></a>
                     </li> -->
                 </ul>
                 <h2>Mission</h2>
-                <p>Tear Down a Wall Day is a social campaign to combat walls of every kind, whether mental, physical or something else entirely..</p>
+                <p>Tear Down a Wall is a campaign for a more open world inspired by the fall of one of the world's most iconic walls- the Berlin Wall- on November 9th, 1989.</p>
+                <p>We believe a worldwide day dedicated to the opening of arms and minds has a tangible impact in making the world a better place, and that big change is the product of lots of people making little changes to their daily lives.</p>
+                <p>Each Nov 9th, Tear Down a Wall Day is a chance to reflect on the barriers in your life- mental, physical, or otherwise- and share your story about knocking them down.</p>
             </div>
         </div>
     </section>
 
     <!-- participate Section -->
-    <section id="contest" class="content-section text-center">
+    <section id="participate" class="content-section text-center">
         <div class="participate-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>participate</h2>
-                    <p style="color:red">Need a real image here</p>
-                    <a href="#" class="btn btn-default btn-lg">Some call to action?</a>
+                    <p>November 9th is still a ways off but there are 3 things you can do right now to get involved 1- Spread the word: blog about us, share on social media, tell your friends, your cat, your neighbor. 2- Sign up for mailing list to be reminded on the actual day 3- submit your story of a time you broke down a wall to own contest and you could win $500</p>
+                    <a href="#" class="black-button btn btn-default btn-lg">Join Mailing List</a>
+                    <p>On the actual day of Nov 9th remember to go out and #TearDownAWall and then shout it out for all to hear and check social media for everyone sharing their own stories.</p>
                 </div>
             </div>
         </div>
@@ -147,7 +181,8 @@ TO DO:
     <section id="stories" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>stories</h2>
+                <h2>Contest</h2>
+                <p>From now until Oct 31st accept 500 word submissions of a time you tore down a wall in your life. ADD LINK TO GOOGLE FORM for submission</p>
                 <p>Section where we will display people's story entries, maybe a feed of live tweets with the # in them</p>
                 </p>
 
