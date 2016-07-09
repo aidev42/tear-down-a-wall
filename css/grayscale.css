@@ -406,18 +406,38 @@ h1{
   margin: 20px 0;
 }
 
-.black-button:hover{
-  background-color: black;
-  border-color: black;
+.white-button{
   color: white;
-/*  -webkit-animation-name: pulseless;
+  border-color: white;
+  margin: 20px 0;
+}
+
+.white-button:hover{
+  background-color: white;
+  border-color: white;
+  color: black;
+  -webkit-animation-name: pulseless;
   -moz-animation-name: pulseless;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;*/
+  -moz-animation-timing-function: linear;
+}
+
+.black-button:hover{
+  background-color: black;
+  border-color: black;
+  color: white;
+  -webkit-animation-name: pulseless;
+  -moz-animation-name: pulseless;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
 }
 
 
